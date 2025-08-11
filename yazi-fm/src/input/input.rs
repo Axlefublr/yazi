@@ -18,7 +18,7 @@ impl Widget for Input<'_> {
 		yazi_binding::elements::Clear::default().render(area, buf);
 
 		Block::bordered()
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.input.border)
 			.title(Line::styled(&input.title, THEME.input.title))
 			.render(area, buf);
