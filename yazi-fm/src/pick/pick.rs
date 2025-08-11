@@ -1,4 +1,8 @@
-use ratatui::{buffer::Buffer, layout::{Margin, Rect}, widgets::{Block, BorderType, Widget}};
+use ratatui::{
+	buffer::Buffer,
+	layout::{Margin, Rect},
+	widgets::{Block, BorderType, Widget},
+};
 use yazi_config::THEME;
 use yazi_core::Core;
 
@@ -9,7 +13,9 @@ pub(crate) struct Pick<'a> {
 }
 
 impl<'a> Pick<'a> {
-	pub(crate) fn new(core: &'a Core) -> Self { Self { core } }
+	pub(crate) fn new(core: &'a Core) -> Self {
+		Self { core }
+	}
 }
 
 impl Widget for Pick<'_> {
@@ -21,7 +27,7 @@ impl Widget for Pick<'_> {
 
 		Block::bordered()
 			.title(pick.title())
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.pick.border)
 			.render(area, buf);
 
