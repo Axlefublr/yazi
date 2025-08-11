@@ -25,7 +25,7 @@ impl Widget for Help<'_> {
 		Block::bordered()
 			.title(format!("{}.help", help.layer))
 			.title_alignment(Alignment::Center)
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.help.border.get())
 			.render(area, buf);
 
@@ -38,7 +38,7 @@ impl Widget for Help<'_> {
 
 		// Divider
 		Block::bordered()
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.help.border.get())
 			.merge_borders(MergeStrategy::Fuzzy)
 			.render(chunks[1], buf);

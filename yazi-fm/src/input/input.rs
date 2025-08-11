@@ -47,7 +47,7 @@ impl Widget for Input<'_> {
 		yazi_widgets::clear::Clear::default().render(outer, buf);
 
 		let mut block = Block::bordered()
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.input.border.get())
 			.title(Line::styled(&self.core.input.main.title, THEME.input.title.get()));
 
