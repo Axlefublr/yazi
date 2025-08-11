@@ -21,7 +21,7 @@ impl Utils {
 				Renderable::Border(yazi_binding::elements::Border {
 					area,
 					edge: Edge(ratatui_widgets::borders::Borders::ALL),
-					r#type: ratatui_widgets::borders::BorderType::Rounded,
+					r#type: ratatui_widgets::borders::BorderType::Plain,
 					style: THEME.spot.border.get().into(),
 					merge: Default::default(),
 					titles: vec![(

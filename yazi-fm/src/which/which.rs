@@ -41,7 +41,7 @@ impl Widget for Which<'_> {
 		Clear::default().render(area, buf);
 		let block = Block::bordered()
 			.style(THEME.which.mask.get())
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.which.border.get());
 		block.as_ref().render(area, buf);
 
