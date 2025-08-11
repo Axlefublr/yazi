@@ -21,7 +21,7 @@ impl Widget for Pick<'_> {
 
 		Block::bordered()
 			.title(pick.title())
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.pick.border)
 			.render(area, buf);
 

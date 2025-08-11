@@ -37,7 +37,7 @@ impl Widget for Tasks<'_> {
 		let block = Block::bordered()
 			.title(Line::styled("Tasks", THEME.tasks.title))
 			.title_alignment(Alignment::Center)
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.tasks.border);
 		(&block).render(area, buf);
 

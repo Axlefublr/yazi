@@ -20,7 +20,7 @@ impl Utils {
 				Renderable::Border(yazi_binding::elements::Border {
 					area,
 					edge: Edge(ratatui::widgets::Borders::ALL),
-					r#type: ratatui::widgets::BorderType::Rounded,
+					r#type: ratatui::widgets::BorderType::Plain,
 					style: THEME.spot.border.into(),
 					titles: vec![(
 						ratatui::widgets::TitlePosition::Top,

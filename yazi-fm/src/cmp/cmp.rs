@@ -54,7 +54,7 @@ impl Widget for Cmp<'_> {
 
 		yazi_binding::elements::Clear::default().render(area, buf);
 		List::new(items)
-			.block(Block::bordered().border_type(BorderType::Rounded).border_style(THEME.cmp.border))
+			.block(Block::bordered().border_type(BorderType::Plain).border_style(THEME.cmp.border))
 			.render(area, buf);
 	}
 }
