@@ -19,7 +19,7 @@ impl Widget for Confirm<'_> {
 		yazi_widgets::clear::Clear::default().render(area, buf);
 
 		Block::bordered()
-			.border_type(BorderType::Rounded)
+			.border_type(BorderType::Plain)
 			.border_style(THEME.confirm.border.get())
 			.title(confirm.title.clone().style(THEME.confirm.title.get().derive(confirm.title.style)))
 			.title_alignment(Alignment::Center)
