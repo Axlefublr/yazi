@@ -39,10 +39,9 @@ impl Widget for Which<'_> {
 		}
 
 		Clear::default().render(area, buf);
-		let block = Block::bordered()
+		let block = Block::new()
 			.style(THEME.which.mask.get())
-			.border_type(BorderType::Plain)
-			.border_style(THEME.which.border.get());
+			.padding(ratatui_widgets::block::Padding::vertical(1));
 		block.as_ref().render(area, buf);
 
 		let inner = block.inner(area);
